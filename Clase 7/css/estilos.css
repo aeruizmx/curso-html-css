@@ -1,18 +1,34 @@
-body{
-  background: salmon;
-  font-family: helvetica;
-  color: white;
-
-}
-
-p{
+html, body {
+  padding: 0px;
+  margin: 0px;
   font-size: 12px;
+  font-family: Helvetica;
 }
 
-#soyunid{
-  color: blue;
+nav {
+  display: flex;
+  background-color: #7acc2d;
+  padding: 10px;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.soyunaclase{
+nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 20px;
+  list-style: none;
+}
+
+nav li a{
   color: gray;
+  text-decoration: none;
 }
+
+nav li a:hover{
+  color: white;
+}
+
