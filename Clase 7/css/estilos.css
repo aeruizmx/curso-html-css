@@ -60,6 +60,7 @@ nav li a:hover{
   background-position: center top;
   padding:10%;
   display: flex;
+  justify-content: center;
 }
 
 .product{
@@ -91,3 +92,64 @@ nav li a:hover{
 .main_button:hover{
   background-color: #5e9e22;
 }
+
+.most_items {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  margin-right: 40px;
+  border-bottom: 2px solid #f4f4f4;
+}
+
+.most_item {
+  padding: 0 20px;
+}
+
+.image_most {
+  text-align: center;
+  height: 140px;
+}
+
+.most_item h1 {
+  text-align: center;
+}
+
+.most_item p {
+  max-width: 200px;
+}
+
+.mentions {
+  padding-top: 50px;
+}
+
+.mentions  h1 {
+  text-align: center;
+}
+
+.mention_items {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.mention_item {
+  max-width: 235px;
+  margin: 0 10px;
+  border: 1px solid #ededed;
+  box-shadow: 6px 6px 5px 0px #ededed;
+}
+
+.image_mention img {
+  width: 235px;
+}
+
+.mention_item h1 {
+  text-align: left;
+  padding: 0 10px;
+}
+
+.mention_item p {
+  padding: 0 10px;
+} 
