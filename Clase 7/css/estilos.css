@@ -32,6 +32,7 @@ nav{
   padding: var(--space);
   min-height: 60px;
   background-color: var(--green-color);
+  box-shadow: 6px 6px 5px 0px var(--green-color);
 }
 
 nav a{
