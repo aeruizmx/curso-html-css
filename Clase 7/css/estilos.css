@@ -10,6 +10,8 @@
   /*------ Espaciado */
   --space:10px;
   --space-2:20px;
+  /*------- Box */
+  --box:0px 0 2px 1px #e6e5e9;
 }
 
 /* -------------------------------------------  */
@@ -157,6 +159,21 @@ nav ul li{
 .mention p {
   padding: 0 10px;
 } 
+
+/* VENTA */
+
+.modulo_pago{
+  background-color:var(--white-color);
+  box-shadow: var(--box);
+  padding:var(--space);
+  }
+  
+  .modulo_pago_images{
+    max-width: 150px;
+    text-align: center;
+    width: 100%;
+    margin:auto;
+  }
 
 /* FOOTER */
 footer{
