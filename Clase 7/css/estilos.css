@@ -1,104 +1,111 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
-/*Variables*/
-:root {
---green-color: #7acc2d;
---white-color: white;
---black-color: #313337;
-/*Espaciado*/
---space:10px;
-/*Tipografia*/
---normal:12px;
-/*Box shadow*/
---box: 0px 0 2px 1px #c1bcbc;
+/*------ Variables */
+:root{
+  /*------ Colores */
+  --green-color: #7ACC2D;
+  --black-color: #313337;
+  --white-color: white;
+  /*------ Tipografía */
+  --normal:12px;
+  /*------ Espaciado */
+  --space:10px;
+  --space-2:20px;
 }
 
-html, body {
-  padding: 0px;
-  margin: 0px;
+/* -------------------------------------------  */
+html, body{
+  margin:0;
+  padding: 0;
+  font-family: helvetica;
+  color: var(--black-color);
+}
+
+p{
   font-size: var(--normal);
-  font-family: 'Open Sans', sans-serif ;
 }
 
-nav {
+nav{
   display: flex;
-  background-color: var(--green-color);
-  padding: var(--space);
-  color: var(--white-color);
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding: var(--space);
+  min-height: 60px;
+  background-color: var(--green-color);
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: var(--normal);
+}
+
+nav a:hover{
+  color: var(--white-color);
 }
 
 nav ul {
   display: flex;
 }
 
-nav li {
-  padding-left: 20px;
+nav ul li{
+  padding-right: 20px;
   list-style: none;
 }
 
-nav li a{
-  color: var(--black-color);
-  text-decoration: none;
-}
-
-nav li a:hover{
-  color: var(--white-color);
-}
-
-/*** Main section ***/
+/* ------------------------------------------- MAIN SECTION */
 
 .main_section{
-  padding: 15%;
   text-align: center;
+  padding: 15%;
 }
+
+/* -------------------------------------------  PRODUCTOS */
 
 .products{
   background-image: url("../images/curve.png");
-  max-height: 50px;
-  background-size: cover;
+  padding: 15%;
   background-position: center top;
-  padding:10%;
+  background-repeat: no-repeat;
   display: flex;
+  height: 95px;
+  background-size: cover;
   justify-content: center;
 }
 
 .product{
-  padding: var(--space);
-  margin-top: -240px;
+  padding: 20px;
+  margin-top: -226px;
 }
 
-.product .content{
-  background-color: var(--white-color);
-  padding: 15px;
-  box-shadow: var(--box);
-}
-
-.image_content {
+.image-product{
   text-align: center;
 }
 
-.main_button {
+.content{
+  padding: 20px;
+  background: var(--white-color);
+  border-radius: 3px;
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+
+.main_btn{
+  padding: var(--space);
   background-color: var(--green-color);
   width: 100%;
-  padding: var(--space);
-  font-size: var(--normal);
-  color: var(--white-color);
-  border: 0;
-  cursor: pointer;
+  border: 0px;
   border-radius: 2px;
+  cursor: pointer;
+  color: var(--white-color);
 }
-
-.main_button:hover{
-  background-color: #5e9e22;
+.main_btn:hover{
+  background-color: #63a426;
 }
-
+/* MOST ITEMS */
 .most_items {
-  padding-top: 50px;
+  padding: var(--space);
   display: flex;
   justify-content: space-evenly;
-  margin-left: 10%;
-  margin-right: 40px;
   border-bottom: 2px solid #f4f4f4;
 }
 
@@ -118,23 +125,19 @@ nav li a:hover{
 .most_item p {
   max-width: 200px;
 }
+/* MENTIONS */
 
-.mentions {
-  padding-top: 50px;
-}
-
-.mentions  h1 {
+.mention_title {
   text-align: center;
 }
 
-.mention_items {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.mentions {
+  padding: var(--space);
   display: flex;
   justify-content: center;
 }
 
-.mention_item {
+.mention {
   max-width: 235px;
   margin: 0 10px;
   border: 1px solid #ededed;
@@ -145,11 +148,27 @@ nav li a:hover{
   width: 235px;
 }
 
-.mention_item h1 {
+.mention h1 {
   text-align: left;
   padding: 0 10px;
 }
 
-.mention_item p {
+.mention p {
   padding: 0 10px;
 } 
+
+/* FOOTER */
+footer{
+  padding: var(--space);
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--black-color);
+  padding: var(--space);
+  color: var(--white-color);
+}
+
+.option a {
+  color: var(--white-color);
+  text-decoration: none;
+}
